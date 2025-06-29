@@ -1,0 +1,279 @@
+/* Import Professional Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+/* General Styling */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8f9fa; /* Soft Neutral */
+  color: #2c2c2c; /* Dark Grey */
+  margin: 0;
+  padding: 0;
+}
+
+/* Terms Container */
+.terms-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 35px;
+  background: #ffffff; /* Clean White */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.terms-container:hover {
+  transform: scale(1.01);
+}
+
+/* Terms Content */
+.terms-content {
+  /* Additional container styling can be added here if needed */
+}
+
+/* Title */
+.terms-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d1b2a; /* Deep Blue */
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f4a261; /* Premium Gold */
+}
+
+/* Date */
+.terms-date {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* ---------------------- */
+/* Section Base Styling   */
+/* ---------------------- */
+.terms-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: #ffffff; /* Clean White */
+  border-radius: 12px;
+  border-left: 5px solid #f4a261; /* Premium Gold */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
+}
+
+.terms-section:hover {
+  background: rgba(255, 255, 255, 0.98);
+  transform: translateY(-3px);
+}
+
+/* ---------------------- */
+/* Section Headings       */
+/* ---------------------- */
+.terms-section-1-heading,
+.terms-section-2-heading,
+.terms-section-3-heading,
+.terms-section-4-heading,
+.terms-section-5-heading,
+.terms-section-6-heading,
+.terms-section-7-heading,
+.terms-section-8-heading,
+.terms-section-9-heading,
+.terms-section-10-heading,
+.terms-section-11-heading,
+.terms-section-12-heading,
+.terms-section-13-heading,
+.terms-section-14-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0d1b2a; /* Deep Blue */
+  margin-bottom: 10px;
+}
+
+/* ---------------------- */
+/* Subheadings            */
+/* ---------------------- */
+.terms-section-2-subheading-1,
+.terms-section-2-subheading-2 {
+  font-size: 18px;
+  color: #f4a261; /* Premium Gold */
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* ---------------------- */
+/* Paragraphs             */
+/* ---------------------- */
+.terms-section-1-paragraph,
+.terms-section-2-paragraph,
+.terms-section-13-paragraph,
+.terms-section-14-paragraph {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ---------------------- */
+/* Lists                  */
+/* ---------------------- */
+.terms-section-1-list,
+.terms-section-2-list,
+.terms-section-3-list,
+.terms-section-4-list,
+.terms-section-5-list,
+.terms-section-8-list {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  padding-left: 20px;
+}
+
+.terms-section-1-list li,
+.terms-section-2-list li,
+.terms-section-3-list li,
+.terms-section-4-list li,
+.terms-section-5-list li,
+.terms-section-8-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------------------- */
+/* Links                  */
+/* ---------------------- */
+.terms-section-8-link,
+.terms-section-13-link-email {
+  color: #0d1b2a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.terms-section-8-link:hover,
+.terms-section-13-link-email:hover {
+  text-decoration: underline;
+  color: #f4a261;
+}
+
+/* ---------------------- */
+/* Footer                 */
+/* ---------------------- */
+.terms-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 40px;
+  padding: 10px 0;
+  border-top: 2px solid #f4a261;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.terms-footer-text {
+  margin: 0;
+}
+
+/* ---------------------- */
+/* Full Mobile Responsiveness */
+/* ---------------------- */
+@media (max-width: 1024px) {
+  .terms-container {
+    max-width: 85%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .terms-title {
+    font-size: 28px;
+  }
+
+  .terms-section-1-heading,
+  .terms-section-2-heading,
+  .terms-section-3-heading,
+  .terms-section-4-heading,
+  .terms-section-5-heading,
+  .terms-section-6-heading,
+  .terms-section-7-heading,
+  .terms-section-8-heading,
+  .terms-section-9-heading,
+  .terms-section-10-heading,
+  .terms-section-11-heading,
+  .terms-section-12-heading,
+  .terms-section-13-heading,
+  .terms-section-14-heading {
+    font-size: 20px;
+  }
+
+  .terms-section-2-subheading-1,
+  .terms-section-2-subheading-2 {
+    font-size: 17px;
+  }
+
+  .terms-section-1-paragraph,
+  .terms-section-2-paragraph,
+  .terms-section-13-paragraph,
+  .terms-section-14-paragraph,
+  .terms-section-1-list li,
+  .terms-section-2-list li,
+  .terms-section-3-list li,
+  .terms-section-4-list li,
+  .terms-section-5-list li,
+  .terms-section-8-list li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .terms-title {
+    font-size: 26px;
+  }
+
+  .terms-section-1-heading,
+  .terms-section-2-heading,
+  .terms-section-3-heading,
+  .terms-section-4-heading,
+  .terms-section-5-heading,
+  .terms-section-6-heading,
+  .terms-section-7-heading,
+  .terms-section-8-heading,
+  .terms-section-9-heading,
+  .terms-section-10-heading,
+  .terms-section-11-heading,
+  .terms-section-12-heading,
+  .terms-section-13-heading,
+  .terms-section-14-heading {
+    font-size: 18px;
+  }
+
+  .terms-section-2-subheading-1,
+  .terms-section-2-subheading-2 {
+    font-size: 16px;
+  }
+
+  .terms-section-1-paragraph,
+  .terms-section-2-paragraph,
+  .terms-section-13-paragraph,
+  .terms-section-14-paragraph,
+  .terms-section-1-list li,
+  .terms-section-2-list li,
+  .terms-section-3-list li,
+  .terms-section-4-list li,
+  .terms-section-5-list li,
+  .terms-section-8-list li {
+    font-size: 14px;
+  }
+}

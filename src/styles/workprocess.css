@@ -1,0 +1,199 @@
+/* 🌌 Dark Luxury Work Process Section */
+.work-process-section {
+  background: linear-gradient(135deg, #0d0d0d, #111111);
+  padding: 120px 5%;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* 🔥 Floating Gold Overlay */
+.work-process-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.12) 10%,
+    transparent 50%
+  );
+  z-index: -1;
+}
+
+/* Elegant Section Title */
+.section-title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+  color: #ffd700;
+  text-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Work Process Grid */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* 🔥 Glass Process Card */
+.process-card {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 18px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 215, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+
+  /* Initial Hidden State */
+  opacity: 0;
+  transform: translateY(80px) scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Remove Gold Hover Effect */
+.process-card::before {
+  display: none;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: none;
+}
+
+/* Premium Icon Container */
+.icon-container {
+  background: linear-gradient(135deg, #ffd700, #ff6a00);
+  padding: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.75);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.12) rotate(360deg);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.85);
+}
+
+/* Process Title - CEO Level */
+.process-card h3 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ffd700;
+  margin: 20px 0;
+  text-shadow: 0 4px 12px rgba(255, 215, 0, 0.35);
+}
+
+/* Process Description - Luxury Typography */
+.process-card p {
+  font-size: 1.4rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* 💰 Royal CTA Button */
+.cta-button {
+  background: linear-gradient(135deg, #ffd700, #ff6a00);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 18px 55px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 60px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.12);
+  background: linear-gradient(135deg, #ff6a00, #ffd700);
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.5);
+}
+
+/* 📱 Responsive Enhancements */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 3.2rem;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .process-card {
+    padding: 40px;
+  }
+
+  .cta-button {
+    font-size: 1.6rem;
+    padding: 15px 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-process-section {
+    padding: 80px 3%;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .process-card {
+    width: 100%;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.08);
+    border-radius: 15px;
+  }
+
+  .icon-container {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+
+  .process-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .process-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .cta-button {
+    font-size: 1.5rem;
+    padding: 14px 40px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🏆 Scroll Animation Activation */
+.show-on-scroll {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

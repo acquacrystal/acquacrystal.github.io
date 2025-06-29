@@ -1,0 +1,629 @@
+/* Trust Section Container */
+.trust-section {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee) !important;
+  padding: 4rem 1rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.trust-section::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: -100px !important;
+  right: -100px !important;
+  width: 300px !important;
+  height: 300px !important;
+  background: radial-gradient(
+    circle,
+    rgba(0, 114, 255, 0.15),
+    transparent 70%
+  ) !important;
+  transform: rotate(45deg) !important;
+  z-index: 0 !important;
+}
+
+/* Card Container */
+.trust-card {
+  background: #fff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  margin: 0 auto !important;
+  max-width: 900px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.4s cubic-bezier(0.2, 1, 0.22, 1) !important,
+    box-shadow 0.4s cubic-bezier(0.2, 1, 0.22, 1) !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.trust-card:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Card Content */
+.trust-card-content {
+  padding: 3rem !important;
+}
+
+/* Main Heading */
+.trust-heading {
+  font-size: 2.75rem !important;
+  font-weight: 700 !important;
+  color: #34495e !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Subheading - Darker Text Colour */
+.trust-subheading {
+  font-size: 1.25rem !important;
+  color: #2c3e50 !important; /* Changed from #7f8c8d to a darker shade */
+  margin-bottom: 2rem !important;
+  text-align: center !important;
+  font-style: italic !important;
+}
+
+/* Description Paragraph - Darker Text Colour */
+.trust-description {
+  font-size: 1.125rem !important;
+  color: #2c3e50 !important; /* Changed from #95a5a6 to a darker shade */
+  margin-bottom: 2.5rem !important;
+  text-align: center !important;
+  line-height: 1.6 !important;
+}
+
+/* List Container */
+.trust-list-container {
+  margin: 0 auto !important;
+}
+
+/* Unordered List */
+.trust-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  align-items: center !important; /* Ensures items are centered */
+}
+
+/* List Items */
+.trust-list-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; /* Ensures everything is centered */
+  text-align: center !important;
+  margin-bottom: 1.5rem !important;
+  padding: 0.75rem 1.25rem !important;
+  border-radius: 10px !important;
+  background: #f7f9fc !important;
+  transition: background 0.3s ease !important, transform 0.3s ease !important;
+  flex-direction: column !important; /* Stack icon and text */
+}
+.trust-list-item:hover {
+  background: #e8f4fd !important;
+  transform: translateX(10px) !important;
+}
+
+/* List Icon */
+.trust-list-icon {
+  margin: 0 auto 0.5rem auto !important; /* Centers icon */
+  color: #2ecc71 !important;
+  font-size: 2rem !important;
+  line-height: 1 !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* List Text */
+.trust-list-text {
+  font-size: 1.125rem !important;
+  color: #2c3e50 !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+}
+
+/* Call-to-Action (CTA) Container */
+.trust-cta {
+  text-align: center !important;
+  margin-top: 3rem !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* CTA Headings - Darker Text Colour */
+.trust-cta-heading {
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important; /* Changed from #34495e to a darker shade */
+  margin-bottom: 1.25rem !important;
+}
+
+/* CTA Button */
+.trust-cta-button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.875rem 2.5rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease !important, transform 0.3s ease !important,
+    box-shadow 0.3s ease !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.trust-cta-button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Responsive Typography Adjustments for Desktop */
+@media (min-width: 768px) {
+  .trust-heading {
+    font-size: 3rem !important;
+  }
+  .trust-subheading {
+    font-size: 1.375rem !important;
+  }
+  .trust-description {
+    font-size: 1.25rem !important;
+  }
+  .trust-cta-heading {
+    font-size: 2rem !important;
+  }
+  .trust-cta-button {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .trust-section {
+    padding: 2rem 0.5rem !important;
+  }
+  .trust-card {
+    width: 90% !important; /* Ensures card is centered */
+    margin: 0 auto !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+  }
+  .trust-card-content {
+    padding: 1.5rem !important;
+  }
+  .trust-heading {
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .trust-subheading {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .trust-description {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  /* Change list items to stack vertically on mobile */
+  .trust-list-item {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.5rem 1rem !important;
+  }
+  .trust-list-icon {
+    font-size: 1.5rem !important;
+    margin: 0 auto 0.5rem auto !important;
+  }
+
+  .trust-list-text {
+    font-size: 1rem !important;
+  }
+  .trust-cta {
+    margin-top: 2rem !important;
+  }
+  .trust-cta-heading {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .trust-cta-button {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
+
+/* trust.css */
+
+/* Base Styles */
+.trust-alpha-section {
+  background: linear-gradient(
+    135deg,
+    #f9fafb,
+    #e5e7eb
+  ) !important; /* Elegant gradient backdrop */
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+  transition: padding 0.3s ease !important;
+}
+
+.trust-alpha-card {
+  background: #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.trust-alpha-card:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.trust-alpha-card-content {
+  padding: 2rem !important;
+}
+
+.trust-alpha-heading {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  text-align: center !important;
+  margin-bottom: 1.5rem !important;
+  position: relative !important;
+  letter-spacing: 0.5px !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.trust-alpha-heading::after {
+  content: "" !important;
+  display: block !important;
+  width: 60px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #10b981, #3b82f6) !important;
+  margin: 0.75rem auto 0 !important;
+  border-radius: 2px !important;
+}
+
+.trust-alpha-subheading {
+  font-size: 1.15rem !important;
+  color: #4b5563 !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.6 !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.trust-alpha-list-container {
+  max-width: 640px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+.trust-alpha-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.trust-alpha-list-item {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 1.5rem !important;
+  border-radius: 5px !important;
+  padding: 0.5rem 1rem !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.trust-alpha-list-item:hover {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+.trust-alpha-list-icon {
+  font-size: 1.75rem !important;
+  margin-right: 1rem !important;
+  color: #10b981 !important;
+}
+
+.trust-alpha-list-text {
+  font-size: 1.15rem !important;
+  color: #374151 !important;
+  line-height: 1.6 !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.trust-alpha-cta {
+  text-align: center !important;
+  margin-top: 2.5rem !important;
+  padding: 0 1rem !important;
+}
+
+.trust-alpha-cta-heading {
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  margin-bottom: 1rem !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.trust-alpha-cta-button {
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%) !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 0.85rem 1.75rem !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+}
+
+.trust-alpha-cta-button:hover {
+  background: linear-gradient(90deg, #0ea574 0%, #2563eb 100%) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Desktop Styles (min-width: 768px) */
+@media (min-width: 768px) {
+  .trust-alpha-heading {
+    font-size: 3rem !important;
+  }
+  .trust-alpha-subheading {
+    font-size: 1.375rem !important;
+  }
+  .trust-alpha-cta-heading {
+    font-size: 2rem !important;
+  }
+  .trust-alpha-cta-button {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+  .trust-alpha-section {
+    padding: 2rem 0.5rem !important;
+  }
+  .trust-alpha-card {
+    width: 90% !important; /* Ensures card is centered */
+    margin: 0 auto !important;
+    border-radius: 15px !important;
+    text-align: center !important;
+  }
+  .trust-alpha-card-content {
+    padding: 1.5rem !important;
+  }
+  .trust-alpha-heading {
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .trust-alpha-subheading {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .trust-alpha-list-item {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 0.5rem 1rem !important;
+  }
+  .trust-alpha-list-icon {
+    font-size: 1.5rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .trust-alpha-list-text {
+    font-size: 1rem !important;
+  }
+  .trust-alpha-cta-heading {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .trust-alpha-cta-button {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
+
+/* ===============================
+   Alameen Trust - Premium Success Section
+   =============================== */
+
+.alameen-trust-section {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 100px 20px !important;
+  background: linear-gradient(135deg, #f0f2f5, #ffffff) !important;
+}
+
+/* CARD: PREMIUM LOOK */
+.alameen-trust-card {
+  width: 90% !important;
+  max-width: 1100px !important;
+  background: #ffffff !important;
+  color: #333 !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12) !important;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+.alameen-trust-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* CONTENT: CENTERED & CLEAN */
+.alameen-trust-card-content {
+  text-align: center !important;
+  padding: 60px !important;
+}
+
+/* HEADER: POWERFUL & BOLD */
+.alameen-trust-heading {
+  font-size: 2.8rem !important;
+  font-weight: bold !important;
+  color: #1f2937 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+/* PARAGRAPHS: HIGHLY READABLE */
+.alameen-trust-card-content p {
+  font-size: 1.3rem !important;
+  color: #444 !important;
+  line-height: 1.8 !important;
+  max-width: 850px !important;
+  margin: 0 auto !important;
+}
+
+/* UL LIST: ICONS + TEXT CENTERED & STYLISH */
+.alameen-trust-card-content ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin-top: 35px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+/* LIST ITEMS: SPACIOUS, BEAUTIFUL, & CENTERED */
+.alameen-trust-card-content li {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: #1f2937 !important;
+  background: #f7fafc !important;
+  padding: 18px 24px !important;
+  border-radius: 14px !important;
+  width: 85% !important;
+  max-width: 620px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06) !important;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.alameen-trust-card-content li:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ICONS: BIGGER & MORE ATTRACTIVE */
+.alameen-trust-card-content i {
+  color: #16a34a !important;
+  font-size: 2rem !important;
+  margin-right: 14px !important;
+}
+
+/* CTA TEXT */
+.alameen-trust-card-content .text-xl {
+  font-size: 1.9rem !important;
+  font-weight: bold !important;
+  color: #222 !important;
+  margin-top: 40px !important;
+}
+
+/* 🔥 BEAUTIFUL CTA BUTTON */
+.alameen-trust-card-content .py-3 {
+  padding: 16px 34px !important;
+  font-size: 1.4rem !important;
+  font-weight: bold !important;
+  border-radius: 12px !important;
+  background: linear-gradient(90deg, #ff6a00, #ff8c00) !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 18px rgba(255, 108, 0, 0.3) !important;
+  transition: all 0.3s ease-in-out !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* 🔥 CTA BUTTON: GLOW EFFECT */
+.alameen-trust-card-content .py-3::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -100% !important;
+  left: -100% !important;
+  width: 300% !important;
+  height: 300% !important;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(255, 255, 255, 0) 80%
+  ) !important;
+  transition: top 0.4s ease-in-out, left 0.4s ease-in-out !important;
+}
+
+/* 🔥 CTA BUTTON: HOVER EFFECT */
+.alameen-trust-card-content .py-3:hover {
+  background: linear-gradient(90deg, #ff8c00, #ff6a00) !important;
+  box-shadow: 0 8px 22px rgba(255, 108, 0, 0.4) !important;
+}
+
+.alameen-trust-card-content .py-3:hover::before {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* RESPONSIVENESS */
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .alameen-trust-section {
+    padding: 60px 15px !important; /* Reduce padding for better fit */
+  }
+
+  .alameen-trust-card {
+    width: 95% !important;
+    max-width: 500px !important; /* Prevent excessive width */
+    padding: 20px !important;
+  }
+
+  .alameen-trust-heading {
+    font-size: 2rem !important; /* Slightly smaller for better fit */
+    line-height: 1.3 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .alameen-trust-card-content {
+    padding: 30px 20px !important; /* Reduce excessive padding */
+  }
+
+  .alameen-trust-card-content p {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 15px !important;
+  }
+
+  .alameen-trust-card-content ul {
+    gap: 15px !important; /* Reduce space for compact view */
+  }
+
+  .alameen-trust-card-content li {
+    font-size: 1rem !important;
+    width: 100% !important;
+    padding: 14px 18px !important;
+  }
+
+  .alameen-trust-card-content .py-3 {
+    font-size: 1.2rem !important;
+    padding: 14px 28px !important;
+    width: 100% !important; /* Make button full-width */
+  }
+
+  .alameen-trust-card-content i {
+    font-size: 1.5rem !important;
+    margin-right: 10px !important;
+  }
+}
